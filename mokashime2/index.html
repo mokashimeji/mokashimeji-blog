@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head><!--head tag contains "data about the document"-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Moka and Shimeji">
+    <link rel="stylesheet" href="stylesheet/index.css">
+    <title>Moka Shimeji Blog</title>
+
+<!--↓ CSS code in html sheet is prioritized more than CSS code in CSS style sheet-->
+    <style>
+      .sub-menu{font-size:16px;}
+      .article{
+        background-color:#92cb97;
+      }
+    </style>
+
+  </head>
+
+
+  <body>
+    <header>
+        <h1 id="title">
+          <a href="index.html">
+            <img class="title-pic" src="resources/title.png" alt="title pic"/>
+          </a>
+        </h1>
+
+
+
+        <nav>
+          <h2 class="article">MENU</h2>
+          <ul id="nav">
+            <li class="nav-item"><a href="index.html">HOME</a></li>
+            <li class="nav-item"><a href="#introduction">INTRODUCTION</a>
+              <ul>
+                <li class="sub-menu">Moka</li>
+                <li class="sub-menu">Shimeji</li>
+                <li class="sub-menu">Rio</li>
+                <li class="sub-menu">Anu</li>
+                <li class="sub-menu">Danro</li>
+                <li class="sub-menu">Uni</li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="#diary">DIARY</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <article>
+        <h2 class="article">INTRODUCTION</h2>
+        <div id="introduction">
+          <a href="moka-page.html"><img class="intro" src="resources/pic-moka.png" alt="moka pic"/></a>
+          <a href="shimeji-page.html"><img class="intro" src="resources/pic-shimeji.png" alt="shime pic"/></a>
+          <a href="-rio-page.html"><img class="intro" src="resources/pic-rio.png" alt="rio pic"/></a>
+          <img class="intro" src="resources/pic-anu.png" alt="anu pic"/>
+          <img class="intro" src="resources/pic-danro.png" alt="danro pic"/>
+          <img class="intro" src="resources/pic-uni.jpg" alt="uni pic"/>
+        </div>
+      </article>
+
+      <article>
+        <h2 id="diary" class="article">DIARY</h2>
+      </article
+  </body>
+</html>
