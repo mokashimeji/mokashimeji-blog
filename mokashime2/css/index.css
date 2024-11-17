@@ -1,16 +1,22 @@
 @charset "utf-8";
 
-nav ul {
-    list-style: none;
+.site-header{
+    display:flex; /*要素を横に積む*/
+
 }
 
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
+.header-title{
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.header-navigation{
+    justify-content: space-between;
+    flex-grow:2;
+    flex-shrink:1;
+    flex-basis:auto;
+    display:flex; /*要素を横に積む*/
+    list-style-type: none; /*li要素の点を消す*/
+
 }

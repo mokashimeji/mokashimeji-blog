@@ -1,0 +1,53 @@
+h1. CSS Layout - The display Property
+
+* %{color:yellow}the most important CSS property% for controlling layout .
+* is used to specify how an element is shown on a web page.
+* %{color:yellow}Every HTML element has a default display value% , depending on what type of element it is. 
+The default display value for %{color:yellow}most elements is block or inline%.
+* The display property is used to %{color:yellow}change the default display behavior of HTML elements%.
+
+h2. ◇ Block-level Elements 
+
+A block-level element %{color:yellow}ALWAYS starts on a new line% and %{color:yellow}takes up the full width available% (stretches out to the left and right as far as it can).
+
+h3. Examples of block-level elements:
+
+* <div>
+* <h1> - <h6>
+* <p>
+* <form>
+* <header>
+* <footer>
+* <section>
+
+h2. ◇ Inline Elements
+
+An inline element %{color:yellow}DOES NOT start on a new line% and only %{color:yellow}takes up as much width as necessary%.
+
+h3. Examples of inline-level elements:
+
+* <span>
+* <a>
+* <img>
+
+h2. ◇ display:flexについて
+* This is applied to a container element to %{color:yellow}turn it into a flex container%, %{color:yellow}making all its direct children *flex items*%.
+
+
+h2. ◇ flex Property
+* The flex shorthand property is %{color:yellow}used on flex items (children of a flex container)% 
+* to define how they grow, shrink, and their initial basis size.
+
+h3. Syntax:
+
+<pre>flex: [flex-grow] [flex-shrink] [flex-basis];
+</pre>
+
+* flex-grow: Determines how much the item should grow relative to other items (default is 0).
+* flex-shrink: Determines how much the item should shrink if necessary (default is 1).
+* flex-basis: Defines the initial size of the item before any growing or shrinking occurs (default is auto).
+
+
+
+h2. 参照
+https://www.w3schools.com/css/css_display_visibility.asp
