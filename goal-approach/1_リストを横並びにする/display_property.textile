@@ -1,10 +1,11 @@
-h1. CSS Layout - The display Property
+h1. ■ CSS Layout - The <code>display</code> Property
 
 * %{color:yellow}the most important CSS property% for controlling layout .
-* is used to specify how an element is shown on a web page.
+* is used to specify %{color:yellow}how an element is shown on a web page%.
 * %{color:yellow}Every HTML element has a default display value% , depending on what type of element it is. 
 The default display value for %{color:yellow}most elements is block or inline%.
 * The display property is used to %{color:yellow}change the default display behavior of HTML elements%.
+
 
 h2. ◇ Block-level Elements 
 
@@ -30,11 +31,69 @@ h3. Examples of inline-level elements:
 * <a>
 * <img>
 
-h2. ◇ display:flexについて
+
+h1. ■ Fundamental Usage of <code>display</code>
+
+h2. display: block;
+
+* デフォルトのdisplay valueがinlineの奴でもblockにできる。
+
+h2. display: inline-block;
+
+* デフォルトのdisplay valueがblockの奴でもinlineにできる。
+
+h2. display: none;
+
+* 見えないようにしちゃうぞ
+
+h2. display: flex;
+
+h2. display: grid;
+
+h1. ■ display:flexについて
+* Chat GPT: 
+    The display: flex property is another powerful CSS feature that allows you to create flexible, responsive layouts. 
+    %{color:yellow}When you set an element’s display property to flex, it becomes a flex container, and its child elements (called flex items) are arranged according to the rules of the Flexbox layout model%.
 * This is applied to a container element to %{color:yellow}turn it into a flex container%, %{color:yellow}making all its direct children *flex items*%.
 
 
-h2. ◇ flex Property
+h2. +◇ Key Features of Flexbox+
+
+h3. Flexible Alignment
+* Control how items are aligned along the main axis (justify-content) or cross axis (align-items).
+
+<pre>
+.container {
+  display: flex;
+  justify-content: center; /* Aligns items horizontally */
+  align-items: center;    /* Aligns items vertically */
+}
+</pre>s
+
+h3. Direction Control
+* Change the direction of the layout using flex-direction.
+
+<pre>
+.container {
+  flex-direction: column; /* Stacks items vertically */
+}
+</pre>
+
+h3. Space Distribution
+* Control spacing between items using properties like gap, justify-content, and align-content.
+
+<pre>
+.container {
+  display: flex;
+  gap: 10px; /* Adds space between items */
+}
+</pre>
+
+
+
+
+
+h2. +◇ flex Property+
 * The flex shorthand property is %{color:yellow}used on flex items (children of a flex container)% 
 * to define how they grow, shrink, and their initial basis size.
 

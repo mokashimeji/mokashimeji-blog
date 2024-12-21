@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 .site-header{
-    display:flex; /*要素を横に積む*/
+    display:flex; /*ヘッダーの子要素のdisplayを変更*/
+    flex-flow: row wrap;
+    gap: 5px; /* Adds space between items */
 
 }
 
@@ -18,5 +20,5 @@
     flex-basis:auto;
     display:flex; /*要素を横に積む*/
     list-style-type: none; /*li要素の点を消す*/
-
+    align-items: center;
 }
