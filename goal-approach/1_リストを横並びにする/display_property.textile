@@ -50,6 +50,10 @@ h2. display: flex;
 
 h2. display: grid;
 
+---
+
+---
+
 h1. ■ display:flexについて
 * Chat GPT: 
     The display: flex property is another powerful CSS feature that allows you to create flexible, responsive layouts. 
@@ -68,7 +72,7 @@ h3. Flexible Alignment
   justify-content: center; /* Aligns items horizontally */
   align-items: center;    /* Aligns items vertically */
 }
-</pre>s
+</pre>
 
 h3. Direction Control
 * Change the direction of the layout using flex-direction.
